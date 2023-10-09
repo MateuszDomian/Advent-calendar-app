@@ -2,18 +2,23 @@
   text-align: center;
 }
 
-.day-button{
-  width: 10%;
+.day-windows{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+ 
 }
 
 .popup-content {
-  width: 200px;
-  height: 100px;
+  width: 50rem;
+  height: 30rem;
   background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
   padding: 10px;
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -51,4 +56,58 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.back-img{
+  width: 24rem;
+  height: 24rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.game-content{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 8rem 8rem 8rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.game1-puzzle{
+align-self: stretch;
+text-align: center;
+vertical-align: middle;
+background-color: red;
+opacity: 40% ;
+}
+
+#puzzle-1{
+  grid-area: 1/1/2/2;
+}
+#puzzle-2{
+  grid-area: 1/2/2/3;
+}
+#puzzle-3{
+  grid-area: 1/3/2/4;
+}
+#puzzle-4{
+  grid-area: 2/1/2/2;
+}
+#puzzle-5{
+  grid-area: 2/2/2/3;
+}
+#puzzle-6{
+  grid-area: 2/3/2/4;
+}
+#puzzle-7{
+  grid-area: 3/1/4/2;
+}
+#puzzle-8{
+  grid-area: 3/2/4/3;
+}
+#puzzle-9{
+  grid-area: 3/3/4/4;
 }
